@@ -75,7 +75,7 @@ char *_strdup(char *s);
 char *str_concat(char *ss1, char *ss2);
 int _strlen(char *s);
 char *_strcpy(char *st1, char *st2);
-char *_strtok(char* s, const char* d);
+char *_strtok(char *s, const char *d);
 char **getParameters(char *rBuffer, hshpack *sck);
 int executeCmd(char *prog, char *cmd[], char **e, hshpack  *sck);
 void signal_handler(int xc);
