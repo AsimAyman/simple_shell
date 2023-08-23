@@ -70,34 +70,34 @@ typedef struct Helps
 
 
 char *_getenv(const char *name, char **env);
-char *_path(char* cmd, char** env, hshpack* shpack);
+char *_path(char *cmd, char **env, hshpack *shpack);
 char *_strdup(char *s);
 char *str_concat(char *ss1, char *ss2);
 int _strlen(char *s);
-char *_strcpy(char* st1, char* st2);
+char *_strcpy(char *st1, char *st2);
 char *_strtok(char* s, const char* d);
-char **getParameters(char* rBuffer, hshpack* sck);
-int executeCmd(char* prog, char* cmd[], char** e, hshpack* sck);
+char **getParameters(char *rBuffer, hshpack *sck);
+int executeCmd(char *prog, char *cmd[], char **e, hshpack  *sck);
 void signal_handler(int xc);
 void signal_handler2(int xc);
 int _getline(char **buffer, size_t *bufsize, int fd);
 void free_doubpoint(char **pp);
 int _strlendp(char **s);
-char **checkInput(int ac, char** av, size_t* bsize),
-char** buffer, hshpack* sck);
+char **checkInput(int ac, char **av, size_t *bsize),
+char **buffer, hshpack *sck);
 hshpack *set_struct(char *argv0, int *errn, int *exnum, int *relation,
 		    int *run_able, char ***env, int *unsetnull);
 int _error(int errn, hshpack *shpack, int exnum);
 void addCmd(hshpack *shpack, char *buffer, char *command, char **parameters);
 void addPathToCmd(hshpack *shpack, char *pathCmd);
 ssize_t built_ints(hshpack *sck);
-ssize_t _exit_cmd(hshpack* sck);
+ssize_t _exit_cmd(hshpack *sck);
 int _strcmp(char *s1, char *s2);
 long _atoi(char *sc);
 long _pow(long b, long p);
-char **_copydoublep(char** pp, int osize, int nsize);
+char **_copydoublep(char **pp, int osize, int nsize);
 int _strlendp(char **ss);
-char **_setenv(char** env, char* var, char* val, hshpack* sck);
+char **_setenv(char **env, char *var, char *val, hshpack *sck);
 char **_unsetenv(char **env, char *variable, hshpack *shpack);
 int _isdigit(int cc);
 int _isnumber(char *st);
