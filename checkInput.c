@@ -45,7 +45,7 @@ char **checkInput(int ac, char **av, size_t *bsize,
 		if (**buffer == '#' || !characters || **buffer == '\n')
 			return (NULL);
 		*buffer = deleteComment(*buffer);
-		command = getParameters(*buffer, sck);
+		command = getParameters(*buffer, shpack);
 	}
 	else
 	{
