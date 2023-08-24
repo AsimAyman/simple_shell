@@ -18,7 +18,7 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-char **checkInput(int ac, char **av, size_t *bsize),
+char **checkInput(int ac, char **av, size_t *bsize,
 		   char **buffer, hshpack *sck)
 {
 	ssize_t characters;
