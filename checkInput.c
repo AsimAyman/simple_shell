@@ -19,7 +19,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 char **checkInput(int ac, char **av, size_t *bsize,
-		   char **buffer, hshpack *sck)
+		   char **buffer, hshpack *shpack)
 {
 	ssize_t characters;
 	char **command;
