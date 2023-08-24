@@ -53,7 +53,7 @@ char **_copydoublepDel(char **p, int nsize, int jmp)
  */
 char **_unsetenv(char **ev, char *var, hshpack *sck)
 {
-	int n, m, c, l = 0, l = 0, f = 0;
+	int n, m, c, l = 0, len = 0, f = 0;
 	char **cpy;
 
 	sck->unsetnull[0] = 0;
@@ -74,9 +74,9 @@ char **_unsetenv(char **ev, char *var, hshpack *sck)
 		if (c == l && ev[n][c] == '=')
 		{
 			f = 1;
-			if ((l - 1) != 0)
+			if ((len - 1) != 0)
 			{
-				cpy = _copydoublepDel(ev, l - 1, n);
+				cpy = _copydoublepDel(ev, len - 1, n);
 				if (cpy == 0)
 					return (_error(7, sck, 1), NULL);
 			}
