@@ -23,7 +23,7 @@
 int executeCmd(char *prog, char *cmd[], char **e, hshpack *sck)
 {
 	pid_t p, s;
-	int e = 0, w = 0;
+	int ex = 0, w = 0;
 
 	p = fork();
 	signal(SIGINT, signal_handler2);
@@ -35,8 +35,8 @@ int executeCmd(char *prog, char *cmd[], char **e, hshpack *sck)
 	if (p == 0)
 	{
 
-		e = execve(prog, cmd, e);
-		if (e == -1)
+		ex = execve(prog, cmd, e);
+		if (ex == -1)
 		{
 			_exit(-1);
 		}
