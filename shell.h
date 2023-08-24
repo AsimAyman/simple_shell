@@ -83,7 +83,7 @@ void signal_handler2(int xc);
 int _getline(char **buffer, size_t *bufsize, int fd);
 void free_doubpoint(char **pp);
 int _strlendp(char **s);
-char **checkInput(int ac, char **av, size_t *bsize),
+char **checkInput(int ac, char **av, size_t *bsize,
 char **buffer, hshpack *sck);
 hshpack *set_struct(char *argv0, int *errn, int *exnum, int *relation,
 		    int *run_able, char ***env, int *unsetnull);
